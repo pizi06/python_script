@@ -11,10 +11,10 @@ if __name__ == "__main__":
     st = time.time()
     for i in range(count):
         b = max(Counter(a).values())
-    print "Counter cost: ", time.time() - st
+    print("Counter cost: ", time.time() - st)
     #Counter cost:  0.0840229988098
     st = time.time()
     for i in range(count):
         a.count(max(a, key=a.count))
-    print "count cost:", time.time() - s
+    print("count cost:", time.time() - s)
     # count cost: 0.0126390457153
